@@ -2,10 +2,12 @@
   "name": "desafio01",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "commonjs",
   "license": "MIT",
   "scripts": {
     "lint:fix": "eslint --fix src --ext ts,tsx",
-    "test": "jest"
+    "test": "jest",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "devDependencies": {
     "@types/jest": "^26.0.21",
@@ -18,6 +20,5 @@
   "dependencies": {
     "pg": "^8.5.1",
     "typeorm": "^0.2.31"
-  },
-  "type": "module"
+  }
 }
